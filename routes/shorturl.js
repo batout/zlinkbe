@@ -10,10 +10,10 @@ shortUrlRoute.post("/", async (req, res)=>{
     const shortUrl = req.body.shortUrl;
     const baseUrl = process.env.baseUrl;
     
-    
-    if(!validUrl.isUri(baseUrl)){
-        return res.status(401).json("Internal error. Please come back later.");
-    }
+
+    // if(!validUrl.isUri(baseUrl)){
+    //     return res.status(401).json("Internal error. Please come back later.");
+    // }
 
     if(validUrl.isUri(zoomUrl)){
 
