@@ -8,7 +8,7 @@ const app = express();
 connectDB();
 
 app.use(express.json({}));
-// app.use(cors);
+app.use(cors);
 const PORT = 8000;
 app.get('/', (req, res) => {
     console.log('connection')
