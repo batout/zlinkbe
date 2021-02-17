@@ -11,7 +11,6 @@ app.use(express.json({}));
 // app.use(cors);
 const PORT = 8000;
 app.get('/', (req, res) => {
-    console.log('connection')
     res.send('Hello World!')
   })
 app.listen(PORT, () => console.log("Server is listening on port " + PORT));
